@@ -1,77 +1,37 @@
-<h1 align="center">💸 Wallet - Expense Tracker with React Native & Express 🚀</h1>
+# 💰 Wallet – Expense Tracker (React Native + Express)
 
-![Demo App](/mobile/assets/images/screenshot-for-readme.png)
+A **full-stack expense tracking app** built with **React Native and Express**, designed to help users manage income and expenses with secure authentication and real-time balance updates.  
 
-## 🎯 What You'll Build
+## 🚀 Features
+- 🔐 **Authentication** – Signup & login with **Clerk email verification (6-digit code)**  
+- 📝 **User Flows** – Secure signup, login & logout  
+- 🏠 **Dashboard** – View current balance & past transactions  
+- ➕ **Add Transaction** – Record income or expenses  
+- 🔄 **Pull to Refresh** – Real-time updates from backend  
+- 🗑️ **Delete Transaction** – Updates balance automatically  
 
-This isn't just a front-end app — it's a **complete mobile application** with backend integration, authentication, and cloud-based storage.
+## 🛠️ Tech Stack
+- **Frontend:** React Native, Expo  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB Atlas  
+- **Authentication:** Clerk (email verification)  
+- **Deployment:** Backend on Render  
 
-✅ Works on **iOS & Android (simulator or real device)**  
-✅ Uses your existing **React knowledge**  
-✅ No need for Swift, Kotlin, or native modules  
-✅ Full-stack project in **under 4 hours**
+## 📂 Folder Structure
+- /client → React Native frontend
+- /server → Express backend
 
----
+## 🧪 Learning Outcomes
+- Integrate **React Native with Express backend**  
+- Implement **email verification authentication** (Clerk)  
+- Manage **transaction state & real-time balance updates**  
+- Deploy backend services on **Render**  
 
-## 🧑‍🍳 App Features Overview
+## 📸 Screenshots
+(Add images/demo GIF here)  
 
-- 🔐 **Authentication** with email verification using **Clerk**
-- 📝 **Signup & Login** flows with 6-digit email code
-- 🏠 **Home Screen** that shows your current balance & past transactions
-- ➕ **Create Screen** to add **income** or **expense** transactions
-- 🔄 **Pull to refresh** functionality from scratch
-- 🗑️ **Delete transactions** to update balance
-- 🚪 **Logout** to navigate back to login screen
+## 🌍 Live Demo
+- Backend: [Render Link]()  
+- APK / Expo Go Demo: [Expo Link]()  
 
----
 
-## 🧠 What You’ll Learn
-
-- ⚙️ Build and deploy an **Express API** with **PostgreSQL** using **Neon**
-- 🔐 Implement authentication & email verification with **Clerk**
-- 📲 Build a full mobile app with **React Native & Expo**
-- 🧵 Manage state and navigation using **React Navigation**
-- 🛡️ Understand and apply **Rate Limiting** using **Redis**
-- 🚀 Deploy both backend & mobile with cloud-based tools
-- 🧪 Beginner-friendly for first-time React Native devs
-
----
-
-## 📁 .env Setup
-
-### ⚙️ Backend (`/backend`)
-
-```bash
-PORT=5001
-NODE_ENV=development
-
-CLERK_PUBLISHABLE_KEY=<your_clerk_publishable_key>
-CLERK_SECRET_KEY=<your_clerk_secret_key>
-
-DATABASE_URL=<your_neon_postgres_connection_url>
-
-REDIS_URL=<your_redis_connection_url>
-```
-
-### ⚙️ Backend (`/backend`)
-
-```bash
-EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=<your_clerk_key>
-```
-
-## ⚙️ Run the backend
-
-```bash
-cd backend
-npm install
-npm run dev
-
-```
-
-## 📱 Run the mobile
-
-```bash
-cd mobile
-npm install
-npx expo start
-```
